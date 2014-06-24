@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Purple"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:gravity="center_horizontal"
+        android:text="Activities in Paris, France"
+        android:textColor="@color/White"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:background="@color/Purple"
+        android:gravity="center_horizontal"
+        android:text="The Louvre Museum"
+        android:textColor="@color/White"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/Purple"
+        android:gravity="center_horizontal"
+        android:text="Notre Dam Cathedral"
+        android:textColor="@color/White"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/Purple"
+        android:gravity="center_horizontal"
+        android:text="Eiffel Tower"
+        android:onClick="onEiffelClicked"
+        android:textColor="@color/White"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/Purple"
+        android:gravity="center_horizontal"
+        android:text="Orsey Museum"
+        android:textColor="@color/White"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/Purple"
+        android:gravity="center_horizontal"
+        android:text="Arc de Triumph"
+        android:textColor="@color/White"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/Purple"
+        android:gravity="center_horizontal"
+        android:text="Champs-Elysees"
+        android:textColor="@color/White"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/Purple"
+        android:gravity="center_horizontal"
+        android:text="Centre Georges Pompidou"
+        android:textColor="@color/White"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/Purple"
+        android:gravity="center_horizontal"
+        android:text="Boat Toue in Seine River"
+        android:textColor="@color/White"
+        android:textSize="25sp" />
+    
+
+</LinearLayout>

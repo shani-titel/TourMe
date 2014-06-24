@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Purple"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:gravity="center_horizontal"
+        android:text="Let&apos;s Wrap it Up!"
+        android:textColor="@color/White"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:gravity="center_horizontal"
+        android:text="What Languages Do You Speak?"
+        android:textColor="@color/White"
+        android:textSize="25sp" />
+
+    <Spinner
+        android:id="@+id/lang1"
+        android:layout_width="250sp"
+        android:layout_height="40sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/lang2"
+        android:layout_width="250sp"
+        android:layout_height="40sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/speak_btn"
+        android:layout_width="80sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:background="@color/Purple"
+        android:gravity="center_horizontal"
+        android:text="Speak"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/progress2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_gravity="left"
+            android:layout_marginRight="200sp"
+            android:background="@drawable/prev"
+            android:onClick="onPrevClicked" />
+
+        <Button
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/next_icon"
+            android:onClick="onNextClicked" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_resultsList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_bottomButtons"
+        android:layout_below="@+id/text_DictationResult"
+        android:visibility="invisible" >
+
+        <ListView
+            android:id="@+id/list_results"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

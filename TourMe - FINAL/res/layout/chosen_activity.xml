@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Purple"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:gravity="center_horizontal"
+        android:text="Touring Eiffel Tower"
+        android:textColor="@color/White"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:background="@color/Purple"
+        android:text="Observation tower in Paris, France"
+        android:textColor="@color/White"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/Purple"
+        android:text="The Eiffel Tower is an iron lattice tower located on the Champ de Mars in Paris. It was named after the engineer Gustave Eiffel, whose company designed and built the tower."
+        android:textColor="@color/White"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:onClick="onImagesClicked"
+            android:background="@drawable/picture" />
+
+        <Button
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:onClick="onInfoClicked" 
+            android:background="@drawable/purple_info" />
+        
+        <Button
+            android:layout_width="80sp"
+            android:onClick="onMapClicked"
+            android:layout_height="80sp"
+            android:background="@drawable/travel_pln" />
+    </LinearLayout>
+
+</LinearLayout>

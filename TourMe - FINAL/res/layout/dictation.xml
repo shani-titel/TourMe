@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Purple" >
+
+    <EditText
+        android:id="@+id/text_DictationResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_titleDictation"
+        android:gravity="top|left"
+        android:minLines="2" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/text_titleDictation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/title_dictation" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/layout_resultsList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_bottomButtons"
+        android:layout_below="@+id/text_DictationResult" >
+
+        <ListView
+            android:id="@+id/list_results"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottomButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_startDictation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_startDictation" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_startWebsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_websearch" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_startTts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:text="@string/button_startTts" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

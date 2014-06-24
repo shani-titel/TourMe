@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="100"
+    tools:context=".MainActivity" >
+
+    <!-- MAP -->
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80ffffff"
+            android:gravity="center"
+            android:text="Eiffel Tower"
+            android:textColor="@color/Black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mapHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80ffffff"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#80ffffff"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="100sp"
+            android:background="@drawable/car_icon_blue"
+            android:onClick="onDrivingClicked" />
+
+        <Button
+            android:layout_width="50sp"
+            android:layout_height="70sp"
+            android:background="@drawable/walking"
+            android:onClick="onWalkingClicked" />
+    </LinearLayout>
+
+</RelativeLayout>

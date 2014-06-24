@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Purple"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:gravity="center_horizontal"
+        android:text="Let&apos;s Get to Know Each Other!"
+        android:textColor="@color/White"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:gravity="center_horizontal"
+        android:text="What is Your Name?"
+        android:textColor="@color/White"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="220sp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text"
+        android:gravity="center"
+        android:imeActionLabel="Next"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textColor="@color/Black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_resultsList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_bottomButtons"
+        android:layout_below="@+id/text_DictationResult"
+        android:visibility="invisible" >
+
+        <ListView
+            android:id="@+id/list_results"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" >
+        </ListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/speak_btn"
+        android:layout_width="80sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp"
+        android:background="@color/Purple"
+        android:text="Speak"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <!-- android:onClick="onSpeakClicked" -->
+
+    <ImageView
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90sp"
+        android:background="@drawable/progress1" />
+
+    <Button
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_gravity="right"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/next_icon"
+        android:onClick="onNextClicked" />
+
+</LinearLayout>
